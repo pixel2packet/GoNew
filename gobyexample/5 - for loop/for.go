@@ -50,3 +50,24 @@ func main() {
 		fmt.Println(n)
 	}
 }
+
+// Answers
+// 1
+// 2
+// 3
+
+// 0
+// 1
+// 2
+
+// range 0
+// range 1
+// range 2
+// range 3
+
+// loop
+
+// 1
+// 3
+// 5
+// 7
