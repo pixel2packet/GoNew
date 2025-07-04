@@ -5,13 +5,16 @@ import "fmt"
 func main() {
 
 	// Values
-	// (Go has various value types including strings, integers, floats, booleans, etc.)
+	// Go has various value types including strings, integers, floats, booleans, etc.
 
+	// // Strings, which can be added together with `+`.
 	fmt.Println("go" + "lang") // golang
 
+	// // Integers and floats.
 	fmt.Println("1+1 =", 1+1)         //1+1 = 2
 	fmt.Println("7.0/3.0 =", 7.0/3.0) //7.0/3.0 = 2.3333333333333335
 
+	// // Booleans, with boolean operators as you'd expect.
 	fmt.Println("T && T:", true && true)   // T && T: true
 	fmt.Println("T && F:", true && false)  // T && F: false
 	fmt.Println("F && T:", false && true)  // F && T: false

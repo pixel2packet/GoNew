@@ -1,11 +1,13 @@
+// for loop
+// for is Go’s only looping construct. Here are some basic types of for loops.
+
 package main
 
 import "fmt"
 
 func main() {
-	// for loop
-	// for is Go’s only looping construct. Here are some basic types of for loops.
 
+	// // The most basic type, with a single condition.
 	i := 1
 	for i <= 3 {
 		fmt.Println(i)
@@ -14,18 +16,24 @@ func main() {
 
 	fmt.Println(" ")
 
+	// // A classic initial/condition/after `for` loop.
 	for j := 0; j < 3; j++ {
 		fmt.Println(j)
 	}
 
 	fmt.Println(" ")
 
-	for i := range 3 {
+	// // Another way of accomplishing the basic "do this
+	// // N times" iteration is `range` over an integer.
+	for i := range 4 {
 		fmt.Println("range", i)
 	}
 
 	fmt.Println(" ")
 
+	// // `for` without a condition will loop repeatedly
+	// // until you `break` out of the loop or `return` from
+	// // the enclosing function.
 	for {
 		fmt.Println("loop")
 		break
@@ -33,7 +41,9 @@ func main() {
 
 	fmt.Println(" ")
 
-	for n := range 6 {
+	// // You can also `continue` to the next iteration of
+	// the loop.
+	for n := range 8 {
 		if n%2 == 0 {
 			continue
 		}
